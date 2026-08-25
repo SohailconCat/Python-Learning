@@ -6,7 +6,7 @@ game =[[0, 0, 0],
 def game_play(game_map, player_move=0, row=0, column=0, just_display=False):
 	print("   a  b  c")
 	if not just_display:
-		game_map[row][column]=player_move #if just_display = True then skips and it just displays
+		game_map[row][column]=player_move #if just_display = True then skip this step and it just displays
 	for count, row in enumerate(game):
 			print(count, row)
 	return game_map
